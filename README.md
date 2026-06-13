@@ -25,6 +25,21 @@ install path.
 - Homepage: <https://coco.griffen.codes>
 - Source: <https://github.com/gfargo/coco> (npm package `git-coco`)
 
+## localpress
+
+Local-compute WordPress management CLI — optimize media, manage posts/pages,
+audit accessibility, generate AI alt-text, all on your own hardware.
+
+```bash
+brew install gfargo/tap/localpress
+```
+
+localpress requires [Bun](https://bun.sh) at runtime (`brew install oven-sh/bun/bun`
+or `curl -fsSL https://bun.sh/install | bash`).
+
+- Homepage: <https://localpress.griffen.codes>
+- Source: <https://github.com/gfargo/localpress>
+
 ### Maintenance
 
 `Formula/coco.rb`'s `url` + `sha256` track the latest published npm tarball and
