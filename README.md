@@ -77,8 +77,10 @@ or `curl -fsSL https://bun.sh/install | bash`).
 
 ## Maintenance
 
+All formulae are updated automatically via GitHub Actions on their respective source repos.
+
 | Formula | Auto-update mechanism |
 |---------|----------------------|
-| `strut` | GitHub Actions workflow in [gfargo/strut](https://github.com/gfargo/strut) triggers on release, computes sha256, and pushes updated formula |
-| `coco` | [`bin/genHomebrewFormula.mjs`](https://github.com/gfargo/coco/blob/main/bin/genHomebrewFormula.mjs) regenerates from npm tarball on each release |
-| `localpress` | Updated manually on release (platform-specific tarballs) |
+| `strut` | Release workflow in [gfargo/strut](https://github.com/gfargo/strut) computes sha256 and pushes updated formula |
+| `coco` | Release workflow in [gfargo/coco](https://github.com/gfargo/coco) regenerates from npm tarball |
+| `localpress` | Release workflow in [gfargo/localpress](https://github.com/gfargo/localpress) builds platform binaries, computes sha256, and pushes formula |
