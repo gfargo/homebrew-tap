@@ -1,17 +1,24 @@
-# coco — AI-powered git assistant (npm package `git-coco`).
+# Homebrew formula for coco (npm package `git-coco`).
+#
+# This lives here as the canonical source. To publish it, copy it into a tap
+# repo named `gfargo/homebrew-tap` (file: Formula/coco.rb). Users then run:
 #
 #     brew install gfargo/tap/coco
 #
-# Homebrew pulls in Node as a dependency, so this is the zero-prerequisite
-# install path. The url + sha256 below are regenerated from the published npm
-# tarball on each release via coco's `bin/genHomebrewFormula.mjs`.
+# Regenerate the url + sha256 on each release with:
+#
+#     node bin/genHomebrewFormula.mjs            # latest published version
+#     node bin/genHomebrewFormula.mjs 0.71.0     # a specific version
+#
+# Homebrew brings Node along as a dependency, so this is the zero-prerequisite
+# install path for users who don't already have a Node toolchain.
 require "language/node"
 
 class Coco < Formula
   desc "AI-powered git assistant: commits, changelogs, reviews, and a terminal workstation"
   homepage "https://coco.griffen.codes"
-  url "https://registry.npmjs.org/git-coco/-/git-coco-0.71.0.tgz"
-  sha256 "1850834cea63f66d0234ed3a443fff058889a315391667fa45174b8bf8979870"
+  url "https://registry.npmjs.org/git-coco/-/git-coco-0.72.0.tgz"
+  sha256 "04ef30caebea99751cdb517e1dd9a71b7427594d12b01af62e56b93da899219b"
   license "MIT"
 
   depends_on "node"
