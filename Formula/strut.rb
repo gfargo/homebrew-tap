@@ -2,14 +2,13 @@
 #
 #   brew install gfargo/tap/strut
 #
-# Pure bash — no compilation. Downloads a tagged release archive
-# and symlinks the entrypoint.
+# Auto-updated by strut release workflow.
 
 class Strut < Formula
   desc "CLI tool for managing Docker stacks on VPS infrastructure"
   homepage "https://github.com/gfargo/strut"
-  url "https://github.com/gfargo/strut/archive/refs/tags/v0.25.0.tar.gz"
-  sha256 "c46e7ea753cc2f7bde4d6e8705192ee7582360c91a63fc15c40bf2a19e0044fe"
+  url "https://github.com/gfargo/strut/archive/refs/tags/v0.25.1.tar.gz"
+  sha256 "0152e940e94ee435d8ed0a1d8a22039bcb2a013fb82c8365d8dc443f90dd46cf"
   license "MIT"
 
   depends_on "bash"
