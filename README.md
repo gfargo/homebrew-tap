@@ -14,6 +14,7 @@ Then install any formula by name:
 brew install strut
 brew install coco
 brew install localpress
+brew install mrgitclean
 ```
 
 Or install directly without tapping first:
@@ -73,6 +74,19 @@ or `curl -fsSL https://bun.sh/install | bash`).
 - Homepage: <https://localpress.griffen.codes>
 - Source: <https://github.com/gfargo/localpress>
 
+### mrgitclean
+
+A friendly CLI to clean up merged Git branches — interactive by default, with
+batch, dry-run, remote, and include/exclude filtering.
+
+```bash
+brew install gfargo/tap/mrgitclean
+```
+
+Depends on zsh (a zsh script).
+
+- Homepage/Source: <https://github.com/gfargo/mrgitclean>
+
 ---
 
 ## Maintenance
@@ -84,3 +98,4 @@ All formulae are updated automatically via GitHub Actions on their respective so
 | `strut` | Release workflow in [gfargo/strut](https://github.com/gfargo/strut) computes sha256 and pushes updated formula |
 | `coco` | Release workflow in [gfargo/coco](https://github.com/gfargo/coco) regenerates from npm tarball |
 | `localpress` | Release workflow in [gfargo/localpress](https://github.com/gfargo/localpress) builds platform binaries, computes sha256, and pushes formula |
+| `mrgitclean` | Release workflow in [gfargo/mrgitclean](https://github.com/gfargo/mrgitclean) computes sha256 from the tag tarball and pushes the updated formula |
