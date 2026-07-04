@@ -9,8 +9,8 @@ class GitRewrite < Formula
 
   desc "Bulk-rewrite any part of git commit history: messages, authors, emails, dates, and more"
   homepage "https://github.com/gfargo/git-rewrite"
-  url "https://github.com/gfargo/git-rewrite/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "PLACEHOLDER"
+  url "https://files.pythonhosted.org/packages/source/g/git-rewrite-history/git_rewrite_history-0.1.2.tar.gz"
+  sha256 "62d61d15f24ac168eae9493c3f5b6917806ae79bba7755ee106137323af59f69"
   license "MIT"
 
   depends_on "python@3.12"
