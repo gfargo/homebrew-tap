@@ -15,6 +15,7 @@ brew install strut
 brew install coco
 brew install localpress
 brew install mrgitclean
+brew install git-rewrite
 ```
 
 Or install directly without tapping first:
@@ -87,6 +88,21 @@ Depends on zsh (a zsh script).
 
 - Homepage/Source: <https://github.com/gfargo/mrgitclean>
 
+### git-rewrite
+
+Bulk-rewrite any part of git commit history: messages, authors, emails, dates,
+and more. Strip AI trailers, normalize emails, fix author dates — across
+thousands of commits in one command.
+
+```bash
+brew install gfargo/tap/git-rewrite
+```
+
+Python-based (Homebrew brings Python as a dependency). Installs into a
+virtualenv automatically.
+
+- Homepage/Source: <https://github.com/gfargo/git-rewrite>
+
 ---
 
 ## Maintenance
@@ -99,3 +115,4 @@ All formulae are updated automatically via GitHub Actions on their respective so
 | `coco` | Release workflow in [gfargo/coco](https://github.com/gfargo/coco) regenerates from npm tarball |
 | `localpress` | Release workflow in [gfargo/localpress](https://github.com/gfargo/localpress) builds platform binaries, computes sha256, and pushes formula |
 | `mrgitclean` | Release workflow in [gfargo/mrgitclean](https://github.com/gfargo/mrgitclean) computes sha256 from the tag tarball and pushes the updated formula |
+| `git-rewrite` | Release workflow in [gfargo/git-rewrite](https://github.com/gfargo/git-rewrite) computes sha256 from PyPI sdist and pushes the updated formula |
