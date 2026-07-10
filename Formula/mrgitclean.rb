@@ -1,8 +1,8 @@
 class Mrgitclean < Formula
   desc "A friendly tool to clean up merged Git branches"
   homepage "https://github.com/gfargo/mrgitclean"
-  url "https://github.com/gfargo/mrgitclean/archive/v1.1.1.tar.gz"
-  sha256 "c6df809d2d3033f2f6357b7f476989b92fdd843caa9ae6d58890e82ca0c1d262"
+  url "https://github.com/gfargo/mrgitclean/archive/v1.1.2.tar.gz"
+  sha256 "560eecad5aa1caa7908a58d8215abd1a478e4f439c4ffce1419f58165037f4ee"
   license "MIT"
 
   def install
