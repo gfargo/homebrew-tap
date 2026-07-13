@@ -17,8 +17,8 @@ require "language/node"
 class Coco < Formula
   desc "AI-powered git assistant: commits, changelogs, reviews, and a terminal workstation"
   homepage "https://coco.griffen.codes"
-  url "https://registry.npmjs.org/git-coco/-/git-coco-0.81.0.tgz"
-  sha256 "1f9fa8de50f26c54f2251abb41e1c64590d891e92e6aa4217bfd1a5c00aa597d"
+  url "https://registry.npmjs.org/git-coco/-/git-coco-0.82.0.tgz"
+  sha256 "e27a64ea37cebbaa969a377590afff06f3c146569a1f687c6e47262224aaf987"
   license "MIT"
 
   depends_on "node"
@@ -26,6 +26,18 @@ class Coco < Formula
   def install
     system "npm", "install", *std_npm_args
     bin.install_symlink Dir["#{libexec}/bin/*"]
+
+    # Shell completions are generated at runtime (`coco completion` /
+    # `coco completion fish`), not shipped as static files — invoke the
+    # just-installed binary to produce them (#1587). `coco completion`
+    # picks bash vs zsh from $SHELL at generation time, so each variant
+    # needs its own forced-env invocation rather than reusing one script
+    # for both directories.
+    bash_output = with_env(SHELL: "/bin/bash") { Utils.safe_popen_read(bin/"coco", "completion") }
+    zsh_output = with_env(SHELL: "/bin/zsh") { Utils.safe_popen_read(bin/"coco", "completion") }
+    (bash_completion/"coco").write bash_output
+    (zsh_completion/"_coco").write zsh_output
+    (fish_completion/"coco.fish").write Utils.safe_popen_read(bin/"coco", "completion", "fish")
   end
 
   test do
