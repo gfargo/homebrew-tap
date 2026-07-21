@@ -17,8 +17,8 @@ require "language/node"
 class Coco < Formula
   desc "AI-powered git assistant: commits, changelogs, reviews, and a terminal workstation"
   homepage "https://coco.griffen.codes"
-  url "https://registry.npmjs.org/git-coco/-/git-coco-0.82.1.tgz"
-  sha256 "480a8939a235298ebad95404a65b65745d641d3869065433ecaf50b730d44ce3"
+  url "https://registry.npmjs.org/git-coco/-/git-coco-0.83.0.tgz"
+  sha256 "8dda2eb3e0778cbb4a9c68c5c398c9e2921175b55db1de0aa33b3e9d7bbc2d1b"
   license "MIT"
 
   depends_on "node"
