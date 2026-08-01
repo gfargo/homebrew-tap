@@ -7,8 +7,8 @@
 class Strut < Formula
   desc "CLI tool for managing Docker stacks on VPS infrastructure"
   homepage "https://github.com/gfargo/strut"
-  url "https://github.com/gfargo/strut/archive/refs/tags/v0.45.0.tar.gz"
-  sha256 "bc043d0d18b83e77b9a6346ff3204bdbf3f2c2245332b295027229ed023a4bef"
+  url "https://github.com/gfargo/strut/archive/refs/tags/v0.45.1.tar.gz"
+  sha256 "a9a1ef55823d8e03f708268ee7cd2fe2102da78047526f2f7e5d106a5a014668"
   license "MIT"
 
   depends_on "bash"
